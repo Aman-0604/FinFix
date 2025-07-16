@@ -1,4 +1,4 @@
-# 📈 FinFix: AI-Powered Portfolio Risk Alert System
+# 💸 FinFix: AI Ticket Triage Assistant
 
 Welcome to **FinFix**, an AI ticket triage assistant. It is designed to analyse tickets created by the user and assign it to the experts based on priority and required skills. It also provides helpful notes to the experts for their ease.
 
@@ -49,7 +49,7 @@ Welcome to **FinFix**, an AI ticket triage assistant. It is designed to analyse 
 3. **Install required packages**
    ```bash
    Terminal-1: cd ai-ticket-assistant > npm i
-   Terminal-2: cd ai-ticket-assistant > npm i
+   Terminal-2: cd ai-ticket-frontend > npm i
 
 4. **Run application on local server**
    ```bash

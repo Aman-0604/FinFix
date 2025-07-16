@@ -71,8 +71,9 @@ export default function SignupPage() {
           <div className="form-control mt-4">
             <button
               type="submit"
-              className="btn btn-primary w-full"
+              className="btn w-full"
               disabled={loading}
+              style={{ backgroundColor: "#03694c" }}
             >
               {loading ? "Signing up..." : "Sign Up"}
             </button>

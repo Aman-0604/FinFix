@@ -79,7 +79,7 @@ export default function Tickets() {
           className="textarea textarea-bordered w-full"
           required
         ></textarea>
-        <button className="btn btn-primary" type="submit" disabled={loading}>
+        <button className="btn" type="submit" disabled={loading} style={{ backgroundColor: "#03694c" }}>
           {loading ? "Submitting..." : "Submit Ticket"}
         </button>
       </form>

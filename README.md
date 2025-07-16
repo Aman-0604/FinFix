@@ -1,20 +1,6 @@
 # 📈 FinFix: AI-Powered Portfolio Risk Alert System
 
-Welcome to **FinFix**, an AI-enhanced financial query resolution and risk alert system for retail investors. Built on top of the original AI Ticket Assistant by ChaiCode, this project leverages AI to help users get smart suggestions and advisor support for managing mutual funds, SIPs, tax-saving options, drawdown alerts, and portfolio optimization.
-
----
-
-## 🧠 What’s New in FinFix?
-
-FinFix transforms the traditional support ticket system into a **portfolio assistant** that:
-
-- Accepts portfolio-related queries or alerts from investors
-- Uses **Google Gemini AI** to:
-  - Categorize the financial issue (e.g., tax, drawdown, SIP, diversification)
-  - Assign priority (e.g., high drawdown = urgent)
-  - Match with a relevant **financial advisor**
-  - Generate **AI-suggested financial advice**
-- Sends smart alerts and expert suggestions via email
+Welcome to **FinFix**, an AI ticket triage assistant. It is designed to analyse tickets created by the user and assign it to the experts based on priority and required skills. It also provides helpful notes to the experts for their ease.
 
 ---
 
@@ -37,7 +23,7 @@ FinFix transforms the traditional support ticket system into a **portfolio assis
 
 - **Event-Driven Architecture**
   - Async query processing via Inngest
-  - Email notifications to assigned advisors
+  - Email notifications to assigned advisors via Mailtrap
 
 ---
 
@@ -47,18 +33,8 @@ FinFix transforms the traditional support ticket system into a **portfolio assis
 - **Database**: MongoDB  
 - **Authentication**: JWT  
 - **AI**: Google Gemini API  
-- **Async Jobs**: Inngest  
-- **Emails**: Nodemailer + Mailtrap  
-- **Deployment**: Localhost (dev-ready)
-
----
-
-## 📋 Prerequisites
-
-- Node.js (v14+)
-- MongoDB
-- Google Gemini API key
-- Mailtrap credentials
+- **Async Jobs (Background Jobs)**: Inngest  
+- **Emails**: Mailtrap  
 
 ---
 
@@ -67,4 +43,16 @@ FinFix transforms the traditional support ticket system into a **portfolio assis
 1. **Clone the repo**  
    ```bash
    git clone <repo-url>
-   cd finfix
+
+2. **Create .env files in ai-ticket-assistant as well as ai-ticket-frontend**
+
+3. **Install required packages**
+   ```bash
+   Terminal-1: cd ai-ticket-assistant > npm i
+   Terminal-2: cd ai-ticket-assistant > npm i
+
+4. **Run application on local server**
+   ```bash
+   Terminal-1: cd ai-ticket-assistant > npm run dev
+   Terminal-2: cd ai-ticket-assistant > npm run inngest-dev
+   Terminal-3: cd ai-ticket-frontend > npm run dev
